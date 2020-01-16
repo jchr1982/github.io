@@ -1,0 +1,127 @@
+Accesibilidad:
+-------------
+
+Principios: Perceptible, Operable, Comprensible y Robusto
+
+Perceptible:
+-----------
+
+(error) en la imagen 1 (imagen principal), la imagen tiene el atributo alt, pero su contenido no es 
+lo suficientemente descriptivo, tampoco tiene el atributo title que describa la imagen cuando el usuario 
+pase el raton por encima de ella.
+solucion: modificar el contenido del atributo alt y agregar el atributo title con un contenido
+mas descriptivo.
+
+(error) despues de una etiqueta <h1> debe seguir una etiqueta <h2>. En el codigo html 
+aparece una etiqueta <h1> y seguidamente un <h3>Noticias relacionadas</h3>, lo cual no es 
+correcto. Dificulta diferenciar entre el titulo principal y los secundarios de la pagina.
+solucion: <h2>Noticias relacionadas</h2>
+
+(error) el enlace <a class="leer-mas" href="#">Leer más...</a> no apunta a ningun sitio dentro de la
+misma pagina, ni a alguna pagina web externa. Ademas, el texto Leer mas..., debe ser mas descriptivo.
+
+(error) en las imagenes 3, 5, 7, 9:
+la imagen no tiene el atributo alt, ni el atributo title, despues de la etiqueta <figure> debe 
+ir la etiqueta <figcaption> para darle una descripcion adecuada a la imagen.
+
+(error) en las imagenes 2, 4, 6, 8, 10:
+la imagen tiene el atributo alt, pero su contenido no es lo suficientemente descriptivo, tampoco 
+tiene el atributo title, despues de la etiqueta <figure> debe ir la etiqueta <figcaption> para 
+darle una descripcion adecuada a la imagen.
+
+(error) en la etiqueta <h1>:
+Antes de la ultima imagen que aparece en el archivo html, aparece la 
+etiqueta <h1><a href="grid-cerveza-gratis.html">Con GRID hay cerveza gratis</a></h1>. 
+solucion: se debe utilizar en este caso la etiqueta <h2>. Solo debe aparecer una 
+etiqueta <h1> en todo el documento.
+
+
+
+
+Operable:
+--------
+
+(error) de identificacion de la pagina Web, el elemento title está vacío
+la pagina web no tiene un titulo que identifique el contenido. En el cuerpo de la 
+etiqueta <head> aparece la etiqueta <title> sin contenido.
+solucion: <title>HTML5: Flex y Grid - Ejemplo</title>
+
+(error) en el menu. Las referencias que estan en el menu de opciones que estan en la cabecera de la pagina no apuntan a 
+algun sitio. Los enlaces relacionados con las redes sociales no apuntan a algun sitio.
+solucion: colocar enlaces a paginas reales.
+
+(error) no existen enlaces para saltar bloques de contenido.
+solucion: agregar un enlace al principio de un bloque de contenido que dirija al final del bloque.
+<a name="seccion1"></a> <a name="seccion2"></a>
+<p class="inicio"><a class="inicio" href="#seccion2"><i class="fas fa-arrow-up fa-2x"></i></a></p>
+
+(error) el footer se encuentra ubicado dentro de otro contenedor <div class="middle2">, cuando
+deberia estar fuera.
+solucion: colocar el contenedor del Footer al final de los contenidos de la pagina.
+
+
+Robusto:
+-------
+
+(error) no se encuentre los datos del autor de la pagina y la descripcion de la pagina.
+solucion: 
+<meta name="author" content="Juan Carlos Herrera Rios">
+<meta name="description" content="Evaluable 2">
+ 
+(error) no se indica el conjunto de caracteres permitidos en los contenidos de la pagina 
+solucion: agregar <meta charset="utf-8">.
+
+(error) falta el código de idioma en el atributo lang. 
+solucion: agregar <html lang="es">
+
+(error) para el reconocimiento semantico de los contenidos de la pagina:
+No usa las etiquetas semanticas de html5: <section> <article> <nav> <aside>, por ejemplo: 
+el menu no esta contenido dentro de la etiqueta semantica <nav></nav>. Las paginas Web
+queusen estas etiquetas son muy bin vistas por los buscadores (google).
+solucion: colocar la etiqueta <nav> en los menus y dos etiquetas <section>, para los dos
+bloques de contenido
+
+(error) en la ubicacion del titulo principal del contenido:
+La etiqueta <h1>Disfruta con las ventajas de FLEX y GRID de CSS</h1> debe ir antes de la
+etiqueta de apertura <figure>. Tambien se ajusto su estilo con h1 {font-size: 1.9em; margin-bottom:10px;}
+
+(error) en la ubicacion del parrafo y del enlace:
+La etiqueta de parrafo <p> y el enlace que estan dentro de la primera etiqueta <figure> deben 
+ir despues del cierre de esta etiqueta y antes de cerrar el div (contenedor).
+
+
+
+
+---------------------
+
+
+Usabilidad:
+----------
+La usabilidad, desde el punto de vista de la satisfacción del usuario, es
+un concepto abstracto difícil de medir directamente. Está relacionada con
+algo que es útil, eficiente, cómodo y fácil de usar.
+
+Facilidad de aprendizaje:
+Los enlaces se verian mejor sin el subrayado y el contenido del enlace
+que tiene <h3> modificarle el font, para que guarde una mejor relacion entre los
+titulos principales y secundarios.
+solucion: agregar a la hoja de estilo 
+a {text-decoration: none; color: black;}
+h3 {font-size: 1em;}
+
+
+El menu de opciones no se puede leer. Solucion: corregir en la hoja de estilo
+.menu {flex: 40%; background-color: lightgray; align-items: middle;}
+.menu a {text-decoration: none; color: black;}
+
+
+El boton leer mas, deberia ser mas descriptivo, indicando al usuario que podira 
+ver si lo activa. Solucion: "Quieres saber mas sobre GRiD..."
+
+Satisfacción:
+la apariencia de los contenidos textuales no esta justificada, lo que da la
+sensacion de que esta desordenada.
+solucion: en la etiqueta <p> en todos los contenedores se justificaron con text-align: justify;
+para tener una mejor apariencia y coherencian en relacion a los otros contenidos y para 
+facilitar su lectura se aplico el estilo line-height: 1.5em;.
+

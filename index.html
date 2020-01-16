@@ -1,0 +1,270 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML5: Flex y Grid - Ejemplo</title>
+    <meta name="author" content="Juan Carlos Herrera Rios">
+    <meta name="description" content="Ejemplos de paginas con Flex y Grid CSS">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+    <!-- Enlace al archivo Javascript con mi función-->
+    <script type="text/javascript" src="js/codigo.js"></script>
+
+    <!-- jQuery y jQueryUI -->
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
+</head>
+
+<body>
+    <div class="grid-container">
+        <!-- fila de la cabecera -->
+        <div class="header">
+            <nav>
+                <div class="menu">
+                    <ul>
+                        <li><a href="grid1.html">Inicio</a></li>
+                        <li><a href="grid2.html">Rollo zen</a></li>
+                        <li><a href="grid3.html">Anímate con la accesibilidad</a>
+                            <ul>
+                                <li><a href="grid4.html">Pautas WCAG 1.0</a></li>
+                                <li><a href="grid5.html">Pautas WCAG 2.0</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="social">
+                <p><a href="facebook.html"><i class="fab fa-facebook fa-2x"></i> Facebook</a> <a href="tweeter.html"><i class="fab fa-twitter fa-2x"></i> Tweeter</a> <a href="instagran.html"><i class="fab fa-instagram fa-2x"></i> Instagram</a></p>
+            </div>
+        </div>
+
+        <!-- segunda fila con middle + right -->
+
+        <section>
+            <div class="middle">
+                <a name="seccion1"></a>
+
+                <figure>
+                    <h1>Disfruta las ventajas de FLEX y GRID de CSS</h1>
+                    <img src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?cs=srgb&dl=background-calm-clouds-747964.jpg&fm=jpg" width="100%" alt="imagen de una persona mirando un paisaje" title="Persona mirando un paisaje" />
+                    <figcaption>Relajándonos con Flex y Grid</figcaption>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a class="leer-mas" href="grid6.html">Quieres aprender todo de GRID y FLEX</a>
+                </figure>
+
+            </div>
+            <br>
+            <p class="inicio"><a href="#seccion1"><i class="fas fa-arrow-up fa-2x"></i>subir</a></p>
+        </section>
+
+        <section>
+            <div class="right">
+                <h2>Noticias relacionadas</h2>
+                <div class="content-flex">
+                    <div class="noticia">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?cs=srgb&dl=alternative-energy-background-blue-1036936.jpg&fm=jpg" width="100%" height="auto" alt="Imagen con unos bombillos rebotando" title="bombillos rebontando entre ellos" />
+                        </figure>
+                        <h3><a href="uno-y-otro.html">Una cosa lleva a la otra</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="noticia">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de un paisaje de un arbol en un lago" title="paisaje de un arbol en el lago" />
+                        </figure>
+                        <h3><a href="solo-uso-grid.html">¿Te sientes solo usando GRID?</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="noticia">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/2519212/pexels-photo-2519212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de un grupo de personas mirando el paisaje" title="personas mirando el paisaje" />
+                        </figure>
+                        <h3><a href="amigos-mas-flex.html">Con amigos, el FLEX es más fácil</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                    <div class="noticia">
+                        <figure>
+                            <img src="https://images.pexels.com/photos/1916824/pexels-photo-1916824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de una persona en la oscuridad" title="persona en la oscuridad" />
+                        </figure>
+                        <h3><a href="yo-pro-grid.html">Yo, en plan PRO, con GRID</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+    <!-- tercera fila con middle + right -->
+
+    <div class="grid-container2">
+        <a name="seccion2"></a>
+
+        <div class="left">
+            <h2>Te podría interesar...</h2>
+            <div class="content-flex">
+                <div class="noticia">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1036936/pexels-photo-1036936.jpeg?cs=srgb&dl=alternative-energy-background-blue-1036936.jpg&fm=jpg" width="100%" height="auto" alt="Imagen con unos bombillos rebotando" title="bombillos rebontando entre ellos" />
+                    </figure>
+                    <h3><a href="el-float-pa-cuando.html">¿Y el float "pa" cuando?</a></h3>
+                </div>
+                <div class="noticia">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/2138922/pexels-photo-2138922.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de un paisaje de un arbol en un lago" title="paisaje de un arbol en el lago" />
+                    </figure>
+                    <h3><a href="te-sientes-solo-con-float.html">¿Te sientes solo usando float?</a></h3>
+                </div>
+                <div class="noticia">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/2519212/pexels-photo-2519212.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de un grupo de personas mirando el paisaje" title="personas mirando el paisaje" />
+                    </figure>
+                    <h3><a href="flotar-ambos-lados.html">Que no te floten a ambos lados</a></h3>
+                </div>
+                <div class="noticia">
+                    <figure>
+                        <img src="https://images.pexels.com/photos/1916824/pexels-photo-1916824.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" width="100%" height="auto" alt="Imagen de una persona en la oscuridad" title="persona en la oscuridad" />
+                    </figure>
+                    <h3><a href="float-no-es-oscuridad.html">Float no es solo oscuridad</a></h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="middle2">
+            <h2><a href="grid-cerveza-gratis.html">Con GRID hay cerveza gratis</a></h2>
+            <figure>
+                <img src="https://images.pexels.com/photos/2599245/pexels-photo-2599245.jpeg?cs=srgb&dl=alcohol-alphabet-beer-2599245.jpg&fm=jpg" width="40%" height="auto" alt="Imagen de un aviso indicando cervezas" title="aviso fluorescente indicando cervezas" />
+                <figcaption>Relajándonos mejor con Flex y Grid</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+
+    </div>
+
+    <br>
+    <p class="inicio"><a href="#seccion2"><i class="fas fa-arrow-up fa-2x"></i>subir</a></p>
+
+    <!-- Footer -->
+    <div class="footer">
+        footer
+    </div>
+
+    <!-- Pestañas -->
+    <div id="tabs">
+        <ul>
+            <li><a href="#tabs-1">Accesibilidad</a></li>
+            <li><a href="#tabs-2">Usabilidad</a></li>
+        </ul>
+        <div id="tabs-1">
+            <span class="interlineado-1-5em justificado">
+                <strong>Perceptible:</strong>
+                <br>
+                (error) en la imagen 1 (imagen principal), la imagen tiene el atributo alt, pero su contenido no es lo suficientemente descriptivo, tampoco tiene el atributo title que describa la imagen cuando el usuario pase el raton por encima de ella.
+                solucion: modificar el contenido del atributo alt y agregar el atributo title con un contenido mas descriptivo.
+                <br><br>
+                (error) despues de una etiqueta h1 debe seguir una etiqueta h2. En el codigo html aparece una etiqueta h1 y seguidamente un h3 Noticias relacionadas, lo cual no es
+                correcto. Dificulta diferenciar entre el titulo principal y los secundarios de la pagina.
+                solucion: h2 Noticias relacionadas
+                <br><br>
+                (error) el enlace a class="leer-mas" href="#">Leer más... no apunta a ningun sitio dentro de la misma pagina, ni a alguna pagina web externa. Ademas, el texto Leer mas..., debe ser mas descriptivo.
+                solucion: Quieres saber más sobre GRID...
+                <br><br>
+                (error) en las imagenes 3, 5, 7, 9:
+                la imagen no tiene el atributo alt, ni el atributo title, despues de la etiqueta figure debe ir la etiqueta figcaption para darle una descripcion adecuada a la imagen.
+                solucion: agregar el atributo alt y agregar la etiqueta title. 
+                <br><br>
+                (error) en las imagenes 2, 4, 6, 8, 10:
+                la imagen tiene el atributo alt, pero su contenido no es lo suficientemente descriptivo, tampoco tiene el atributo title, despues de la etiqueta figure debe ir la etiqueta figcaption para darle una descripcion adecuada a la imagen.
+                solucion: modificar el atributo alt y agregar la etiqueta title. 
+                <br><br>
+                (error) en la etiqueta h1:
+                Antes de la ultima imagen que aparece en el archivo html, aparece la etiqueta h1 a href="grid-cerveza-gratis.html" Con GRID hay cerveza gratis.
+                solucion: se debe utilizar en este caso la etiqueta h2. Solo debe aparecer una etiqueta h1 en todo el documento.
+                <br><br>
+
+                <strong>Operable:</strong>
+                <br>
+                (error) de identificacion de la pagina Web, el elemento title está vacío la pagina web no tiene un titulo que identifique el contenido. En el cuerpo de la
+                etiqueta head aparece la etiqueta title sin contenido.
+                solucion: HTML5: Flex y Grid - Ejemplo
+                <br><br>
+                (error) en el menu. Las referencias que estan en el menu de opciones que estan en la cabecera de la pagina no apuntan a algun sitio. Los enlaces relacionados con las redes sociales no apuntan a algun sitio.
+                solucion: colocar enlaces a paginas reales.
+                <br><br>
+                (error) no existen enlaces para saltar bloques de contenido.
+                solucion: agregar un enlace al principio de un bloque de contenido que dirija al final del bloque.
+                a name="seccion1" y a name="seccion2"
+                p class="inicio" a class="inicio" href="#seccion2" i class="fas fa-arrow-up fa-2x"
+                <br><br>
+                (error) el footer se encuentra ubicado dentro de otro contenedor div class="middle2", cuando deberia estar fuera.
+                solucion: colocar el contenedor del Footer al final de los contenidos de la pagina.
+                <br><br>
+
+                <strong>Robusto:</strong>
+                <br>
+                (error) no se encuentre los datos del autor de la pagina y la descripcion de la pagina.
+                solucion:
+                meta name="author" content="Juan Carlos Herrera Rios"
+                meta name="description" content="Evaluable 2"
+                <br><br>
+                (error) no se indica el conjunto de caracteres permitidos en los contenidos de la pagina.
+                solucion: agregar meta charset="utf-8".
+                <br><br>
+                (error) falta el código de idioma en el atributo lang.
+                solucion: agregar html lang="es"
+                <br><br>
+                (error) para el reconocimiento semantico de los contenidos de la pagina: No usa las etiquetas semanticas de html5: section, article, nav, aside; por ejemplo: el menu no esta contenido dentro de la etiqueta semantica nav. Las paginas Web que usen estas etiquetas son muy bin vistas por los buscadores (google).
+                solucion: colocar la etiqueta nav en los menus y dos etiquetas section, para los dos bloques de contenido
+                <br><br>
+                (error) en la ubicacion del titulo principal del contenido.
+                solucion: la etiqueta h1 Disfruta con las ventajas de FLEX y GRID de CSS debe ir antes de la etiqueta de apertura figure. Tambien se ajusto su estilo con h1 {font-size: 1.9em; margin-bottom:10px;}
+                <br><br>
+                (error) en la ubicacion del parrafo y del enlace.
+                solucion: la etiqueta de parrafo p y el enlace que estan dentro de la primera etiqueta figure deben ir despues del cierre de esta etiqueta y antes de cerrar el div (contenedor).
+                <br><br>
+
+                <strong>Comprensible:</strong>
+                <br>
+                Dejando de lado el hecho de que el contenido de la pagina web, presente un contenido general de ejemplo. No puede encontrar algun error relacionado con el principio de comprensible.
+                <br><br>
+            </span>
+        </div>
+        <div id="tabs-2">
+            <span class="interlineado-1-5em justificado">
+                <strong>Usabilidad:</strong>
+                <br>
+                La usabilidad, desde el punto de vista de la satisfacción del usuario, es un concepto abstracto difícil de medir directamente. Está relacionada con algo que es útil, eficiente, cómodo y fácil de usar.
+                <br><br>
+                <strong>Facilidad de aprendizaje:</strong>
+                <br>
+                Los enlaces se verian mejor sin el subrayado y el contenido del enlace que tiene un h3 modificarle el font, para que guarde una mejor relacion entre los titulos principales y secundarios.
+                solucion: agregar a la hoja de estilo
+                a {text-decoration: none; color: black;}
+                h3 {font-size: 1em;}
+                <br><br>
+                El menu de opciones no se puede leer. Solucion: corregir en la hoja de estilo
+                .menu {flex: 40%; background-color: lightgray; align-items: middle;}
+                .menu a {text-decoration: none; color: black;}
+                <br><br>
+                El boton leer mas, deberia ser mas descriptivo, indicando al usuario que podira ver si lo activa.
+                Solucion: "Quieres saber mas sobre GRiD..."
+                <br><br>
+                <strong>Satisfacción:</strong>
+                <br>
+                la apariencia de los contenidos textuales no esta justificada, lo que da la sensacion de que esta desordenada.
+                solucion: en la etiqueta p en todos los contenedores se justificaron con text-align: justify; para tener una mejor apariencia y coherencian en relacion a los otros contenidos y para facilitar su lectura se aplico el estilo line-height: 1.5em;.
+                <br><br>
+            </span>
+        </div>
+    </div>
+
+</body>
+
+</html>
